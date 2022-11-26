@@ -1,4 +1,4 @@
-@use '../../../misc/reset_style.css';
+@use 'reset_style.css';
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap');
 
 body {
@@ -147,7 +147,7 @@ body {
 }
 
 .snake-head {
-  background-image: url('../../image/snake-head.png');
+  background-image: url('../image/snake-head.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -170,7 +170,7 @@ body {
 
 .apple {
   // background-color: red;
-  background-image: url('../../image/apple.png');
+  background-image: url('../image/apple.png');
   background-repeat: no-repeat;
   background-size: contain;
 }

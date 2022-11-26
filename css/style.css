@@ -214,7 +214,7 @@ body {
 }
 
 .snake-head {
-  background-image: url("../../image/snake-head.png");
+  background-image: url("../image/snake-head.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -236,7 +236,7 @@ body {
 }
 
 .apple {
-  background-image: url("../../image/apple.png");
+  background-image: url("../image/apple.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
