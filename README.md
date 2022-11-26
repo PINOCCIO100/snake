@@ -9,4 +9,4 @@ Use ESC or SPACE buttons for pause game
 
 "Level" value in main menu define a speed of mr.Snake (higher level - higher speed)
 
-"Apples" value define count of apple on screen in same time
+"Apples" value define count of apple on screen at same time
