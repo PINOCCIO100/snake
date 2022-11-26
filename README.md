@@ -1,4 +1,4 @@
-# snake
+# Mr.Snake Apple Eater
 https://raw.githack.com/PINOCCIO100/snake/main/index.html
 
 Classic Snake Game created by HTML+CSS+JS
