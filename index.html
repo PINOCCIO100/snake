@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Змейка</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="image/snake-head.png" />
+    <script src="script/script.js" defer></script>
+  </head>
+  <body>
+    <div class="cursor-coords">
+      <div class="cursor-coords__container">
+        <p>X: <span></span></p>
+        <p>Y: <span></span></p>
+      </div>
+    </div>
+    <div class="score-board">
+      <div class="score-board__container">Current score: <span></span></div>
+    </div>
+    <main class="playfield">
+      <div class="main-screen">
+        <div class="main-screen__container">
+          <div class="main-screen__grid">
+            <div class="main-screen__start">Start<br>new game</div>
+            <div class="main-screen__level-down"></div>
+            <div class="main-screen__level">
+              Level: <span class="main-screen__level-count">1</span>
+            </div>
+            <div class="main-screen__level-up"></div>
+            <div class="main-screen__apples-down"></div>
+            <div class="main-screen__apples">
+              Apples: <span class="main-screen__apples-count">2</span>
+            </div>
+            <div class="main-screen__apples-up"></div>
+          </div>
+        </div>
+      </div>
+      <div class="death-screen">
+        <div class="death-screen__container">
+          <h2 class="death-screen__title">GAME OVER</h2>
+          <p class="score">
+            Your score: <span class="score__value">00000000</span>
+          </p>
+          <p class="death-screen__retry">Try again</p>
+          <p class="death-screen__go-menu">Main menu</p>
+        </div>
+      </div>
+      <div class="pause-screen">
+        <div class="pause-screen__container">
+          <h2 class="pause-screen__title">Paused</h2>
+          <p class="pause-screen__resume">click to resume</p>
+          <p class="pause-screen__go-menu">Main menu</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
