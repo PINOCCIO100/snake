@@ -1,5 +1,6 @@
 # snake
 https://raw.githack.com/PINOCCIO100/snake/main/index.html
+
 Classic Snake Game created by HTML+CSS+JS
 
 Use WASD or arrows for control mr.Snake
