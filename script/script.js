@@ -147,6 +147,7 @@ class SnakeClass {
     const snakeHeadStyle = getComputedStyle(this.parts[0]);
     let snakeHeadX = dx + +snakeHeadStyle.gridColumnStart;
     let snakeHeadY = dy + +snakeHeadStyle.gridRowStart;
+    let snakeTaleEnd = document.querySelector('.snake-tale:last-child'); // самый последний сегмент хвоста змеи
     let targetCellElem = document.elementFromPoint(...this.getXY(snakeHeadX, snakeHeadY));
     if (targetCellElem != this.#playField) {
       if (targetCellElem.classList.contains('apple')) {  // является ли яблоком встреченный на пути объект 
@@ -155,10 +156,8 @@ class SnakeClass {
         this.addPart(1, 1, 'snake-parts', 'snake-tale');
         scoreValue.increase();
         scoreBoard.textContent = scoreValue.value;
-        // } else if (targetCellElem == this.parts[1]) {
-        //   return; // чтобы исключить возможность змеи повернуть в себя 
-      } else {
-        // gameStop = true;
+      } else if (targetCellElem != snakeTaleEnd) {  
+        // условие выше: если в целевой ячейке находится кончик хвоста, то мы можем двигаться в эту ячейку, т.к. в следующем ходу ее там уже не будет
         deathScreen.score = scoreValue.value;
         scoreValue.value = 0;
         scoreBoard.textContent = scoreValue.value;
@@ -363,8 +362,8 @@ class PauseScreenClass {
     });
   }
 
-  toggle(){
-    switch (this.visible){
+  toggle() {
+    switch (this.visible) {
       case true: this.visible = false; break;
       case false: this.visible = true; break;
     }
