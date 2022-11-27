@@ -157,7 +157,7 @@ class SnakeClass {
         scoreValue.increase();
         scoreBoard.textContent = scoreValue.value;
       } else if (targetCellElem != snakeTaleEnd) {  
-        // условие выше: если в целевой ячейке находится кончик хвоста, то мы можем двигаться в эту ячейку, т.к. в следующем ходу ее там уже не будет
+        // условие выше: если в целевой ячейке находится кончик хвоста, то мы можем двигаться в эту ячейку, т.к. в следующем ходе ее там уже не будет
         deathScreen.score = scoreValue.value;
         scoreValue.value = 0;
         scoreBoard.textContent = scoreValue.value;
